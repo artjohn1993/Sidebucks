@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.LoginActivity"
+    android:background="@drawable/gradient_background">
+    <ImageView
+        android:id="@+id/loginLogo"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/sb_logo"
+        android:padding="@dimen/padding_xl"
+        android:tint="@color/colorWhite"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_m"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/loginLogo">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Which one are you?"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"/>
+        <Button
+            android:id="@+id/customerButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I look for Service Provider"
+            android:textColor="@color/colorPrimary"
+            android:textAllCaps="false"
+            android:layout_marginTop="@dimen/margin_l"
+            android:background="@drawable/rounded_white"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="- OR -"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:layout_marginTop="@dimen/margin_m"/>
+        <Button
+            android:id="@+id/spButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I am a Service Provider"
+            android:textColor="@color/colorPrimary"
+            android:textAllCaps="false"
+            android:layout_marginTop="@dimen/margin_m"
+            android:background="@drawable/rounded_white"/>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

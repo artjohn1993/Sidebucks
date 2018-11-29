@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ProviderIdFormActivity"
+    android:padding="@dimen/padding_m"
+    android:background="@drawable/gradient_background">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/submitButton"
+        android:paddingBottom="@dimen/padding_m">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/browseClearance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Browse valid clearance"
+                android:textColor="@color/colorWhite"
+                android:layout_marginTop="@dimen/margin_m"
+                />
+            <ImageView
+                android:id="@+id/imageClearance"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/default_image"
+                android:layout_marginTop="@dimen/margin_s"/>
+            <TextView
+                android:id="@+id/browseID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Browse valid ID"
+                android:textColor="@color/colorWhite"
+                android:layout_marginTop="@dimen/margin_m"
+                />
+            <ImageView
+                android:id="@+id/imageID"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/default_image"
+                android:layout_marginTop="@dimen/margin_s"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textColor="@color/colorPrimary"
+        android:textAllCaps="false"
+        android:background="@drawable/rounded_white"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>

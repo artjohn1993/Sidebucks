@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ProviderSuccessActivity"
+    android:background="@drawable/gradient_background">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/margin_xl"
+        android:gravity="center"
+        android:padding="@dimen/padding_m">
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:background="@drawable/circler_border_white"
+            android:src="@drawable/ic_check"
+            android:padding="@dimen/padding_l"
+            android:tint="@color/colorWhite"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_l"
+            android:text="@string/provider_register_success"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/providerOKButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            android:textColor="@color/colorPrimary"
+            android:textAllCaps="false"
+            android:layout_marginTop="@dimen/margin_xl"
+            android:background="@drawable/rounded_white"/>
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

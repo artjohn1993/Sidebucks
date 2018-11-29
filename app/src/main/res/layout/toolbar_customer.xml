@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary">
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:layout_collapseMode="pin"
+        android:id="@+id/customToolbar"
+        android:elevation="4dp">
+
+        <ImageView
+            android:id="@+id/toolbar_logo"
+            android:src="@drawable/sb_banner2"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:tint="@color/colorWhite"
+            android:visibility="visible"
+            android:animateLayoutChanges="true"
+            />
+
+        <ImageView
+            android:id="@+id/moreNav"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_more"
+            android:scaleType="centerCrop"
+            android:tint="@color/colorWhite"
+            android:layout_gravity="right"
+            android:padding="@dimen/padding_xs"
+            android:layout_marginRight="@dimen/padding_xs"
+            android:animateLayoutChanges="true"/>
+
+        <ImageView
+            android:id="@+id/notificationNav"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_notifications"
+            android:tint="@color/colorWhite"
+            android:padding="@dimen/padding_xs"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/padding_xs"
+            android:animateLayoutChanges="true"
+            />
+
+        <ImageView
+            android:id="@+id/searchNav"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_search"
+            android:scaleType="centerCrop"
+            android:tint="@color/colorWhite"
+            android:layout_gravity="left"
+            android:padding="@dimen/padding_xs"
+            android:layout_marginRight="@dimen/padding_xs"
+            android:animateLayoutChanges="true"/>
+
+        <ImageView
+            android:id="@+id/closeNav"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_close"
+            android:scaleType="centerCrop"
+            android:tint="@color/colorWhite"
+            android:layout_gravity="right"
+            android:padding="@dimen/padding_xs"
+            android:layout_marginRight="@dimen/padding_xs"
+            android:visibility="gone"
+            android:animateLayoutChanges="true"/>
+
+        <AutoCompleteTextView
+            android:id="@+id/searchBoxNav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:textColor="@color/colorWhite"
+            android:animateLayoutChanges="true"
+            android:backgroundTint="@color/colorWhite"/>
+
+    </android.support.v7.widget.Toolbar>
+</android.support.constraint.ConstraintLayout>

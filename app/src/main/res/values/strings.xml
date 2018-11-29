@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Sidebucks</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="drawer_open">open drawer</string>
+    <string name="drawer_close">close drawer</string>
+    <string name="provider_register_success">Your application has been submitted.\nWe will contact you as soon  as possible\nafter we review your application.\n\n\nThanks you!</string>
+
+    <array name="job">
+        <item name="Mon">Barber</item>
+        <item name="Tue">Singer</item>
+        <item name="Wed">Dancer</item>
+    </array>
+</resources>
